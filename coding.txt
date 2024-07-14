@@ -1,0 +1,69 @@
+MULTIPLES:
+
+package com.mycompany.mavenproject6;
+
+import java.util.Scanner;
+
+public class Mavenproject6 {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("enterfirst integer: ");
+        int num1 = scanner.nextInt();
+        
+        System.out.print("enter second integer: ");
+        int num2 = scanner.nextInt();
+        
+        if (num2 != 0 && num1 % num2 == 0) {
+            System.out.println(num1 + " is a multiple of " + num2);
+        } else {
+            System.out.println(num1 + " is not a multiple of " + num2);
+        }
+    }
+}
+//2.26
+
+PATTERNS:
+
+package com.mycompany.mavenproject4;
+
+public class Mavenproject4 {
+    public static void main(String[] args) {
+
+        for (int i = 1; i <= 8; i++) {
+            for (int j = 1; j <= 8; j++) {
+                if ((i + j) % 2 == 0) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+//2.27
+
+D,R,A:
+
+package com.mycompany.mavenproject5;
+
+import java.util.Scanner;
+
+public class Mavenproject5 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("enter radius of the circle: ");
+        int radius = scanner.nextInt();
+        
+        double diameter = 2 * radius;
+        System.out.println("Diameter: " + diameter);
+        
+        double circumference = 2 * Math.PI * radius;
+        System.out.println("Circumference: " + circumference);
+                
+        double area = Math.PI * radius * radius;
+        System.out.println("Area: " + area);
+    }
+}
+//2.28

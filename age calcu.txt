@@ -1,0 +1,52 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class Mavenproject1 {
+
+    public static void main(String[] args) {
+    
+        InputStreamReader ins=new InputStreamReader(System.in);
+        BufferedReader hey=new BufferedReader(ins);
+
+        try
+        {
+            System.out.println("enter your birth day: ");
+            String date=hey.readLine();
+
+            System.out.println("enter your birth month:");
+            String month=hey.readLine();
+
+            System.out.println("enter your birth year:");
+            String year=hey.readLine();
+            
+             System.out.println("enter your current date: ");
+            String cDate=hey.readLine();
+
+            System.out.println("enter your current month:");
+            String cMonth=hey.readLine();
+
+            System.out.println("enter current year:");
+            String cYear=hey.readLine();
+
+            int bDate = Integer.parseInt(date);
+            int bMonth = Integer.parseInt(month);
+            int bYear = Integer.parseInt(year);
+            int ccDate = Integer.parseInt(cDate);
+            int ccMonth = Integer.parseInt(cMonth);
+            int ccYear=Integer.parseInt(cYear);
+
+            int age;
+
+            age = ccYear-bYear;
+            int totalMonth=12;
+            int yourMonth=totalMonth-bMonth;
+
+            System.out.println(" your are " + age + " years old.");
+        }
+        catch(IOException err)
+        {
+            System.out.println("");
+        }
+    }
+}
