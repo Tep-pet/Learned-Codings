@@ -1,0 +1,28 @@
+package com.mycompany.mavenproject7;
+
+import java.util.*;
+
+public class Mavenproject7 {
+    
+    public static String toProperCase(String name) {
+        return name.substring(0, 1).toUpperCase() + name.substring(1);
+    }
+
+    public static void greetings(){
+        System.out.println("Welcome Manut");
+    }
+            
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String name = scan.nextLine();
+        String lname = scan.nextLine();
+        int num1 = scan.nextInt();
+        int num2 = scan.nextInt();
+        System.out.println("My name is " + toProperCase(name) + " " + toProperCase(lname) + " Addition is " + addNumbers(num1, num2));
+        greetings();
+    }
+    
+    public static int addNumbers(int x, int y){
+        return x + y;
+    }
+}
